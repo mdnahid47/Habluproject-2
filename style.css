@@ -1,0 +1,907 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.line-1{
+    width: 100%;
+    height: 3px;
+    background-color: #535353;
+}
+/* Common Css  */
+.container{
+    width: 92%;
+    margin:  auto;
+    padding: 20px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+
+/* Navbar */
+
+li , a , button{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 45px;
+}
+
+.nav-link li{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-link li a{
+    padding-left: 21px;
+    color: #000000;
+}
+
+.btnBox{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+
+   & a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+   }
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.frame{
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.button{
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+.btn1{
+    border-radius: 25px;
+    border: none;
+    color: #000000;
+}
+
+.btn1{
+    border-radius: 25px;
+    border: none;
+    color: #FFFF;
+    background-color: #000000;
+}
+
+/* hero Section */
+.banner{
+    background: url(images/Rectangle\ 1.png);
+    width: 100%;
+    height: 760px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    position: relative;
+}
+
+.Select-offer{
+    position: absolute;
+    width: 1160px;
+    height: 344px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin: auto;
+    background-color: #FFFF;
+
+    & h2{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-top:50px;
+    }
+
+    
+}
+
+.selectbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 108px;
+    gap: 20px;
+    margin-top: 50px;
+
+    
+    .select{
+       width: 222px;
+       height: 50px;
+       border-radius: 10px;
+       border: none;
+       background-color: #ECECEC;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       cursor: pointer; 
+
+       & h3{
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+    } 
+}
+
+.buttonbx{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10%;
+
+    .btn2{
+        width: 702px;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+    }
+
+    .btn3{
+        width: 222px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        background-color: #00EBC7;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.link{
+    position: absolute;
+    top: 631px;
+    left: 42%;
+    border-radius: 30px;
+    border: 1.5px solid #FFFF;
+     padding: 11px 28px;
+
+    & a{
+       text-decoration: underline;
+       color: #FFFF;
+       font-weight: 22px;
+       font-weight: 500;
+    }
+}
+
+/* Buy And Sell */
+
+.buy-sell{
+    width: 100%;
+    height: 370px;
+    background-color: #FDE24F;
+    text-align: center;
+
+    & h2{
+        font-size: 34px;
+        font-weight: 500;
+        padding-top: 100px;
+
+
+        & span{
+            font-style: italic;
+        }
+        
+    }
+
+    .currency-image{
+        margin-top: 55px;
+
+        & img{
+            width: 75%;
+            height: 75%;
+        }
+    }
+}
+
+
+/* Feature Section */
+.Features{
+    margin-top: 100px;
+
+    & h2{
+        margin-left: 30px;
+    }
+}
+.FeaturesBox{
+    width: 1500px;
+    height: 280px;
+    display: flex;
+    margin: 130px auto;
+    justify-content: space-between;
+    gap: 50px;
+
+    & div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        & img{
+            margin-bottom: 20px;
+        }
+
+        & h3{
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        & p{
+            margin-bottom: 45px;
+            font-size: 20px;
+            line-height: 24.2px;
+            padding: 0px 0px;
+            color: #535353;
+        }
+
+        & a{
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: underline;
+            color: #000000;
+
+            & span{
+                font-style: italic;
+            }
+        }
+    }
+
+    .line{
+        width: 220px;
+        height: 2px;
+        background-color: #000000;
+        display: inline-block;
+        position: relative;
+        top: 40%;
+    }
+}
+
+
+.featuresbutton{
+    width: 300px;
+    position: relative;
+    left: 44%;
+    bottom: 45px;
+    border: 1.5px solid #000000;
+    border-radius: 30px;
+    padding: 11px 28px;
+    text-align: center;
+
+    & a{
+        font-size: 22px;
+        font-weight: 500;
+        color: #000000;
+    }
+}
+
+/* payment */
+
+.payment{
+    width: 100%;
+    height: 700px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1.5px solid #000000;
+}
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    & h2{
+        margin-bottom: 28px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+}
+
+.paymentBox{
+    width: 626px;
+    height: 100px;
+    background-color: #FFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    & img{
+        padding-left: 15px;
+    }
+
+    & h4{
+        padding-right: 50px;
+    }
+}
+
+.line-2{
+    width: 1.5px;
+    height: 700px;
+    background-color: #000000;
+}
+
+
+.buySellbtn{
+    width: 237px;
+    padding: 11px 25px;
+    background: #000000;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* sign up */
+
+.sign-up{
+    width: 100%;
+    height: 600px;
+    background-color: #CFBAFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+   & h1{
+    font-size: 75px;
+    font-weight: 500;
+} 
+
+button{
+    position: absolute;
+    bottom: 50px;
+    padding: 15px 45px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+}
+
+/* Footer */
+
+.Footer{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+
+    & img{
+        width: 140px;
+        height: 40px;
+        margin-top: 80px;
+        margin-left: 100px;
+
+    }
+}
+
+.aboutItem{
+    color: #FFFF;
+    margin-top: 85px;
+    margin-left: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & h2{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    & a{
+        color: #FFFF;
+        font-size: 20px;
+        transition: 0.3s ease-in;
+        text-decoration: none;
+    }
+
+}
+
+.aboutBox{
+    width: 984px;
+    height: 312px;
+    display: flex;
+    margin-right: 400px;
+}
+
+/* copyright */
+
+.copyright{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFF;
+    border-top: 1.5px solid #fff;
+
+    & p{
+        padding: 35px 3%;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15.73px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive for 600px  */
+
+@media screen and (max-width:600px) {
+
+    .nav-link{
+        display: none;
+    }
+
+    .btnBox{
+        & a{
+            display: none;
+        }
+        & button{
+            display: none;
+        }
+    }
+
+    /* hero section */
+.banner{
+    .link{
+        left: 32%;
+    }
+}
+    .Select-offer{
+        width: 90%;
+
+        & h2{
+            font-size: 30px;
+        }
+
+        .selectbox{
+            gap: 10px;
+
+            .select{
+                gap: 4px;
+                & h3{
+                    font-size: 15px;    
+                }
+            }
+        }
+
+        .buttonbx{
+            .btn2{
+                width:180px ;
+            }
+
+            .btn3{
+                width: 150px;
+            }
+            
+        }
+
+        
+       
+    }
+
+    /* buy / sell */
+    .buy-sell{
+        & h2{
+            font-size: 25px;
+        }
+
+        .currency-image{
+            & img{
+                width: 70%;
+                justify-content: center;
+            }
+        }
+    }
+
+    /* features section */
+    .Features{
+        .featuresbutton{
+            position: relative;
+            left: 25%;
+            bottom: -45%;
+            
+    
+        }
+    }
+    .FeaturesBox{
+        width: 80%;
+        height: 1350px;
+        flex-direction: column;
+
+        & div{
+            & img{
+                margin-bottom: 15px;
+            }
+
+            & h3{
+                margin-bottom: 15px;
+            }
+        }
+
+        .line{
+            display: none;
+        }
+       
+    }
+    
+
+    /* payment */
+
+    .payment{
+        height: 1%;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-bottom: 50px;
+        
+        .line-2{
+            display: none;
+        }
+    }
+
+    .paymentBox{
+        width: 480px;
+    }
+
+      /* Sign up */
+
+        .sign-up{
+            & h1{
+                font-size: 30px;
+            }
+        }
+    
+    /* Footer */
+    .Footer{
+        height: 1400px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .aboutBox{
+        flex-direction: column;
+    }
+}
+
+/* responsive for  */
+
+@media screen and (max-width:860px){
+    .nav-link{
+        display: none;
+    }
+/* hero section */
+.banner{
+    .link{
+        left: 36%;
+    }
+
+    .Select-offer{
+        width: 90%;
+       
+    }
+}
+   
+
+/* buy/sell */
+
+.buy-sell{
+    & h2{
+        font-size: 25px;
+    }
+
+    .currency-image{
+        & img{
+            width: 70%;
+            justify-content: center;
+        }
+    }
+}
+
+
+  /* features section */
+  .Features{
+    .featuresbutton{
+        position: relative;
+        left: 27%;
+        bottom: -45%;
+        
+
+    }
+
+    
+}
+  .FeaturesBox{
+    width: 80%;
+    height: 1350px;
+    flex-direction: column;
+
+    & div{
+        & img{
+            margin-bottom: 15px;
+        }
+
+        & h3{
+            margin-bottom: 15px;
+        }
+    }
+
+    .line{
+        display: none;
+    }
+
+   
+}
+.featuresbutton{
+    position: relative;
+    left: 30%;
+    
+
+}
+
+/* payment */
+.payment{
+    height: 1%;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    
+    .line-2{
+        display: none;
+    }
+}
+/* sign up */
+.sign-up{
+    height: 400px;
+
+  & h1{
+    font-size: 30px;
+    margin-bottom: 80px;
+} 
+
+}
+
+   /* Footer  */
+   .aboutBox{
+    margin-right: 250px;
+}
+
+}
+
+/* Responsive for 1024 */
+@media screen and (max-width:1024px){
+
+         /* Header */
+    .nav-link{
+        display: none;
+    }
+
+    /* Hero Section */
+    .Select-offer{
+        width: 90%;
+    }
+    .buttonbx{
+        gap: 25px;
+
+        .btn2{
+            width: 526px;
+        }
+        .btn3{
+            width: 180px;
+        }
+    }
+
+    /* features */
+    .FeaturesBox{
+        width: 80%;
+        height: 1350px;
+        flex-direction: column;
+
+        & div{
+            & img{
+                margin-bottom: 15px;
+            }
+
+            & h3{
+                margin-bottom: 15px;
+            }
+        }
+
+        .line{
+            display: none;
+        }
+    }
+    .featuresbutton{
+        position: relative;
+        left: 38%;
+        
+    
+    }
+/* payment */
+    .payment{
+        height: 1%;
+        flex-direction: column;
+        margin-top: 20px;
+         padding-bottom: 50px;
+    
+            .line-2{
+                display: none;
+             }
+    }
+    /* Sign up */
+
+    .sign-up{
+        height: 400px;
+
+      & h1{
+        font-size: 40px;
+        margin-bottom: 50px;
+    } 
+    
+    }
+
+}
+
+    @media screen and (max-width:1280px){
+        .nav-link li{
+            display: inline-block;
+        }
+
+        /* hero section */
+        .Select-offer{
+            width: 90%;
+        }
+
+        .buttonbx{
+            gap: 22px;
+            margin-left: 10.5%;
+        
+            .btn2{
+                width: 602px;
+                height: 50px;
+            }
+        
+            .btn3{
+                width: 195px;
+                height: 50px;
+                margin-right: 4%;
+
+            }
+        }
+
+        .link{
+            left: 43%;
+        }
+
+        /* feature */
+
+        .Features{
+            width: 100%;
+            height: 1350px;
+            & h2{
+                margin-top: 70px;
+                margin-left: 50px;
+                font-size: 34px;
+                font-weight: 500;
+            }
+        }
+
+        .FeaturesBox{
+            width: 80%;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .line{
+            position: relative;
+            display: none;
+        }
+
+        .featuresbutton{
+            position: relative;
+            left: 40%;
+            bottom: -45%;
+
+        }
+
+        /* payment */
+
+        .payment{
+            height: 1%;
+            flex-direction: column;
+            margin-top: 20px;
+            padding-bottom: 50px;
+
+            .line-2{
+                display: none;
+            }
+            
+        }
+        
+
+        /* Sign up */
+
+
+        /* Footer  */
+        .aboutBox{
+            margin-right: 250px;
+        }
+    }
